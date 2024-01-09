@@ -18,9 +18,9 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-canvas {
-  @apply fixed top-0 left-0 right-0 bottom-0 w-full h-full min-h-screen;
-}
+/* canvas {
+  @apply absolute top-0 left-0 right-0 bottom-0 w-full h-full min-h-screen;
+} */
 
 h1,
 h2,
@@ -42,11 +42,20 @@ h1 {
   font-size: clamp(164px, 20vw, 200px);
   color: #119595;
   letter-spacing: -0.075em;
+
+  @media only screen and (max-width: 768px) {
+    font-size: clamp(120px, 60vw, 160px);
+    line-height: 1em;
+  }
 }
 
 h2 {
   font-size: clamp(56px, 12vw, 64px);
   line-height: 1.1em;
+
+  @media only screen and (max-width: 768px) {
+    font-size: clamp(36px, 9.5vw, 48px);
+  }
 }
 
 h3 {
@@ -74,11 +83,11 @@ p {
 }
 
 button {
-  @apply inline-block px-12 py-6 text-sm text-[20px] leading-5 text-white transition duration-150 ease-in-out bg-[#119595] border border-transparent rounded-md hover:bg-[#2d335d] focus:outline-none focus:border-gray-700 active:bg-gray-700;
+  @apply inline-block px-8 md:px-12 py-4 md:py-6 text-sm text-[20px] leading-5 text-white transition duration-150 ease-in-out bg-[#119595] border border-transparent rounded-md hover:bg-[#2d335d] focus:outline-none focus:border-gray-700 active:bg-gray-700;
 }
 
 .bg-grid {
-  box-shadow: rgba(149, 157, 165, 0.2) -8px 8px 24px;
+  box-shadow: rgba(149, 157, 165, 0.2) -8px -8px 24px;
   border-left: 1px solid rgba(var(--foreground-rgb), 0.2);
 }
 
