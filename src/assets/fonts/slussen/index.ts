@@ -23,12 +23,12 @@ const _ = localFont({
       style: "italic",
     },
     {
-      path: "./Slussen-SemiBold.otf",
+      path: "./Slussen-Semibold.otf",
       weight: "600",
       style: "normal",
     },
     {
-      path: "./Slussen-SemiBold-Italic.otf",
+      path: "./Slussen-Semibold-Italic.otf",
       weight: "600",
       style: "italic",
     },

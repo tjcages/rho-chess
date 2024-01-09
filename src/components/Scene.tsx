@@ -4,6 +4,7 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Environment, ContactShadows } from "@react-three/drei";
 import { Rook, Horse, Castle, Queen, King, Pawn } from "@/components/pieces";
 import Grid from "@/components/Grid";
+// import Effects from "@/components/Effects";
 
 const _ = () => {
   return (

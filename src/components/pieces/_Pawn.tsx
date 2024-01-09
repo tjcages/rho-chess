@@ -11,7 +11,7 @@ interface Props {
 
 const _ = ({ color, position }: Props) => {
   const { nodes } = useGLTF("/scene-transformed.glb");
-  const ref = useRef() as React.MutableRefObject<THREE.Group>;
+  const ref = useRef() as React.MutableRefObject<THREE.Mesh>;
 
   useEffect(() => {
     if (!ref.current) return;
@@ -30,6 +30,7 @@ const _ = ({ color, position }: Props) => {
   return (
     <mesh
       ref={ref}
+      // @ts-expect-error - TS doesn't like the geometry prop
       geometry={nodes.Sphere002_Material001_0.geometry}
       position={position}
       rotation={[-Math.PI / 2, 0, 0]}

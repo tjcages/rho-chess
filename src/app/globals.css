@@ -39,7 +39,7 @@ input {
 }
 
 h1 {
-  font-size: clamp(148px, 20vw, 164px);
+  font-size: clamp(164px, 20vw, 200px);
   color: #119595;
   letter-spacing: -0.075em;
 }
