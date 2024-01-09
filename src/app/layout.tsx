@@ -1,11 +1,8 @@
-import type { Metadata } from "next";
 import Slussen from "@/assets/fonts/slussen";
 import "./globals.css";
+import { seo } from "@/seo";
 
-export const metadata: Metadata = {
-  title: "Rho Game Speed Chess Whitepaper",
-  description: "10 tactical tips for PE-backed CFO in 2024",
-};
+export const metadata = seo;
 
 export default function RootLayout({
   children,
