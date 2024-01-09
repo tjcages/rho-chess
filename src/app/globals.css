@@ -3,17 +3,9 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+  --foreground-rgb: 34, 34, 34;
+  --background-start-rgb: 255, 255, 255;
+  --background-end-rgb: 239, 240, 241;
 }
 
 body {
@@ -24,4 +16,101 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+canvas {
+  @apply fixed top-0 left-0 right-0 bottom-0 w-full h-full min-h-screen;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+small,
+strong,
+input {
+  margin: 0;
+  padding: 0;
+
+  line-height: 1.1em;
+}
+
+h1 {
+  font-size: clamp(148px, 20vw, 164px);
+  color: #119595;
+  letter-spacing: -0.075em;
+}
+
+h2 {
+  font-size: clamp(56px, 12vw, 64px);
+  line-height: 1.1em;
+}
+
+h3 {
+  font-size: clamp(24px, 5vw, 28px);
+}
+
+h4 {
+  font-size: clamp(20px, 3vh, 22px);
+}
+
+h5 {
+  font-size: clamp(14px, 1vw, 14px);
+  line-height: 1.2em;
+  text-transform: uppercase;
+
+  max-width: 500px;
+
+  @media only screen and (max-width: 768px) {
+    font-size: clamp(16px, 1.2vw, 18px);
+  }
+}
+
+p {
+  font-size: clamp(12px, 1vw, 12px);
+}
+
+button {
+  @apply inline-block px-12 py-6 text-sm text-[20px] leading-5 text-white transition duration-150 ease-in-out bg-[#119595] border border-transparent rounded-md hover:bg-[#2d335d] focus:outline-none focus:border-gray-700 active:bg-gray-700;
+}
+
+.bg-grid {
+  box-shadow: rgba(149, 157, 165, 0.2) -8px 8px 24px;
+  border-left: 1px solid rgba(var(--foreground-rgb), 0.2);
+}
+
+.bg-grid:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  background-image: url(/textures/noise.png);
+  background-size: 100px;
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+.bg-grid:after {
+  @apply content-[''] absolute top-0 left-0 right-0 bottom-0 z-[-1] w-full h-full min-h-screen;
+  opacity: 0.8;
+  background-image: linear-gradient(
+      rgb(var(--background-end-rgb)) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      to right,
+      rgb(var(--background-end-rgb)) 1px,
+      transparent 1px
+    );
+  background-size: 20px 20px;
+
+  mask-image: linear-gradient(to bottom, transparent 65%, black 100%);
+
+  pointer-events: none;
 }
