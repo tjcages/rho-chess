@@ -1,7 +1,7 @@
 @tailwind utilities;
 
 form {
-  @apply flex flex-col;
+  @apply flex flex-col gap-4;
 }
 
 label {
