@@ -26,7 +26,7 @@ const _ = ({ expanded, set }: Props) => {
         }`}
       />
       <button
-        className={`w-full pointer-events-auto transition-opacity duration-500 ease-out ${
+        className={`w-full transition-opacity duration-500 ease-out ${
           expanded
             ? "opacity-0 pointer-events-none"
             : "opacity-100 pointer-events-auto"
