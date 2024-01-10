@@ -43,7 +43,7 @@ const _ = () => {
           >
             <p className="uppercase">Whitepaper</p>
             <h2 className="mb-2">
-              10 tactical tips for PE-backed CFO in{" "}
+              10 tactical tips for PE-backed CFOs in{" "}
               <span className="text-[#119595]">2024</span>
             </h2>
             <hr />
