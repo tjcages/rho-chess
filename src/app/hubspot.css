@@ -1,0 +1,27 @@
+@tailwind utilities;
+
+form {
+  @apply grid grid-cols-2 gap-4;
+}
+
+label {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+input {
+  @apply p-4 h-12 w-full;
+  @apply bg-[#eff0f1] border border-gray-300 rounded-sm;
+}
+
+.hs-submit {
+  @apply col-span-2;
+}
+
+.hs-button {
+  @apply flex items-center justify-center px-8 py-4 mt-2 min-h-[56px] text-[16px] leading-5 text-white transition duration-150 ease-in-out bg-[#119595] border border-transparent rounded-md hover:bg-[#2d335d] focus:outline-none focus:border-gray-700 active:bg-gray-700;
+}
+
+.hs-error-msgs {
+  @apply text-red-500;
+}

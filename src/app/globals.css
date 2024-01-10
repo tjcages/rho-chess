@@ -87,8 +87,7 @@ button {
 }
 
 .bg-grid {
-  box-shadow: rgba(149, 157, 165, 0.2) -8px -8px 24px;
-  border-left: 1px solid rgba(var(--foreground-rgb), 0.2);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px -8px 24px;
 }
 
 .bg-grid:before {
@@ -119,7 +118,7 @@ button {
     );
   background-size: 20px 20px;
 
-  mask-image: linear-gradient(to bottom, transparent 65%, black 100%);
+  mask-image: linear-gradient(to right, transparent 10%, black 100%);
 
   pointer-events: none;
 }

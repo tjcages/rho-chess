@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const seo = {
-  title: "Rho Game Speed Chess Whitepaper",
-  description: "10 tactical tips for PE-backed CFO in 2024",
+  title: "Download: PE-Backed CFO Speed Chess Whitepaper",
+  description: "Description: Download this guide to learn ten tactical tips for PE-backed CFOs gathered from peer CFOs and PE sponsors.",
   icons: [
     {
       rel: "icon",

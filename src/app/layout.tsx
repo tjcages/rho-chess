@@ -1,5 +1,6 @@
 import Slussen from "@/assets/fonts/slussen";
 import "./globals.css";
+import "./hubspot.css";
 import { seo } from "@/seo";
 
 export const metadata = seo;
