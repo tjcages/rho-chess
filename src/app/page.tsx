@@ -10,7 +10,7 @@ import Page from "@/components/Page";
 export default function Home() {
   return (
     <HubspotProvider>
-      <main className="fixed top-0 left-0 right-0 bottom-0 h-[100dvh] flex flex-col md:flex-row">
+      <div className="fixed top-0 left-0 right-0 bottom-0 h-[100dvh] md:h-auto md:min-h-screen">
         <Canvas
           shadows
           orthographic
@@ -38,7 +38,7 @@ export default function Home() {
         </Canvas>
 
         <Page />
-      </main>
+      </div>
     </HubspotProvider>
   );
 }

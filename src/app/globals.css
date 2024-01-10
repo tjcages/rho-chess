@@ -36,6 +36,8 @@ input {
   padding: 0;
 
   line-height: 1.1em;
+
+  text-wrap: balance;
 }
 
 h1 {
@@ -69,7 +71,6 @@ h4 {
 h5 {
   font-size: clamp(14px, 1vw, 14px);
   line-height: 1.2em;
-  text-transform: uppercase;
 
   max-width: 500px;
 
@@ -120,5 +121,25 @@ button {
 
   mask-image: linear-gradient(to right, transparent 10%, black 100%);
 
+  pointer-events: none;
+}
+
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
   pointer-events: none;
 }

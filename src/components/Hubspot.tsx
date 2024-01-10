@@ -8,8 +8,12 @@ const _ = () => {
   });
 
   return (
-    <div className="absolute left-0 right-0 bottom-0 px-6 md:px-12 pt-10 pb-4 md:py-16 bg-gradient-to-t from-white">
-      <div id="hubspot-form-wrapper" />
+    <div
+      className="absolute left-0 right-0 bottom-0 px-6 md:px-12 pt-10 pb-4 md:pt-48
+     md:pb-8 bg-gradient-to-t from-white via-white/90 pointer-events-none"
+    >
+      {" "}
+      <div id="hubspot-form-wrapper" className="pointer-events-auto" />
     </div>
   );
 };

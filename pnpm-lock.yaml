@@ -14,6 +14,9 @@ dependencies:
   '@react-three/postprocessing':
     specifier: ^2.15.11
     version: 2.15.11(@react-three/fiber@8.15.13)(@types/three@0.160.0)(react@18.0.0)(three@0.160.0)
+  '@studio-freight/lenis':
+    specifier: ^1.0.33
+    version: 1.0.33
   gsap:
     specifier: ^3.12.4
     version: 3.12.4
@@ -820,6 +823,10 @@ packages:
       react: '>= 16.3.0'
     dependencies:
       react: 18.0.0
+    dev: false
+
+  /@studio-freight/lenis@1.0.33:
+    resolution: {integrity: sha512-Pfoimwwsf8oVuneQg3KoigUDlo1S+rE+m2Tz7b+zMNAEi0UAhox+PG/ksLHa8ktQhlsuWODeQFCl8VHBxqOtfw==}
     dev: false
 
   /@swc/helpers@0.5.2:
